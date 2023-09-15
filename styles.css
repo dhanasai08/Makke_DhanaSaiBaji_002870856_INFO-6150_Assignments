@@ -1,0 +1,30 @@
+html{
+    text-align: center;
+}
+
+.navstyling{
+    width: 100%;
+}
+
+nav li{
+    display: inline;
+    float: left;
+    width: 14.28%;
+}
+
+.videostyle{
+    padding: 10px;
+    padding-top: 20px;
+}
+
+.summarystyle{
+    padding-top: 40px;
+    font-size: large;
+}
+
+.imgside img{
+    float: left;
+    width: 50%;
+    height: 50%;
+    object-fit: cover;
+}
