@@ -1,0 +1,11 @@
+
+@import 'variable.scss';
+
+$color: (rgb(0, 0, 0), rgb(140, 247, 140), rgb(250, 240, 46));
+@for $i from 1 through 3 {
+    .primetext :nth-child(#{$i}) {
+        color: nth($color, $i);
+       
+    }
+}
+

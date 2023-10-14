@@ -1,0 +1,8 @@
+
+
+@function column-width($col, $total) {  
+    @return percentage($col/$total);  //operator
+   }
+   .logo{
+    width: column-width(30,100 );
+   }

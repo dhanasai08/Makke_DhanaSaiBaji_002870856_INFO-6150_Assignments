@@ -1,0 +1,261 @@
+@import 'variable';
+@import 'Loops';
+@import 'mixin';
+@import 'buttons';
+@import 'config';
+@import 'mobile';
+
+
+
+
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.showcase-content{
+    display: grid;
+}
+
+body{
+@include bdy;
+
+}
+.main-text{
+    @include interpolation(font,margin-left,margin-top,letter-spacing);
+}
+
+
+div.main{
+    width: 400px;
+    margin: 100px auto 0px auto;
+}
+
+.main h2{
+    text-align: center;
+    padding:20px;
+    font-family: $font-stack;
+
+}
+
+
+div.register{
+    background-color: $color-main;
+    width: 100%;
+    font-size: 18px;
+    border-radius: $size;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 2px 2px 15px;
+    text-align: center;
+    
+
+}
+
+input{
+    margin-bottom: 3%;
+}
+label{
+    margin-bottom: 3%;
+}
+
+div#register{
+    margin: 40px;
+}
+
+label{
+    font-size: 18px;
+    font-style: italic;
+}
+
+input#name{
+    width: 300px;
+    border: 1px solid $color-main;
+    border-radius: 3px;
+    outline: 0;
+    padding: 7px;
+
+    background-color: #fff;
+
+}
+
+
+input#submit{
+    width: 200px;
+    font-family: sans-serif;
+    padding: 7px;
+    background-color: rgb(165, 160, 160);
+    border-radius: $size;
+    transition: .5s;
+    border: 4px solid $color-main;
+    cursor: pointer;
+}
+   
+
+
+
+nav{
+ 
+    @include display-mixin(flex); //mixin   
+    margin-top: 2%;
+   
+     
+}
+
+.logo{
+    
+    margin-left: 10%;
+    font-size: 33px;
+}
+.nav-list{
+    @include display-mixin(flex); //mixin   
+    margin-left: 7%;
+}
+.na-items{
+    list-style: none;
+    margin-left: 20%;
+    font-size: 24px;
+}
+.na-items a{
+    text-decoration: none;
+    color: $color-main;
+    transition: color .4s;
+}
+.na-items a:hover{
+    color: rgb(0, 0, 0);
+}
+
+
+
+#you{
+    font-size: bold;
+    color: rgb(138, 230, 202);
+}
+.body-text{
+    font-size: 20px;
+    width: 36%;
+    margin-left: 50%;
+    font-family: $font-stack;
+    
+}
+
+
+#formid{
+    text-align: center;
+    margin-top: 5%;
+}
+
+
+
+
+.btn:hover{
+    background-color: $color-main;
+    color: aliceblue;
+}
+
+h3{
+    margin-bottom: 2%;
+    color: #0b0b0a;
+    /* text-decoration-line: underline; */
+}
+#sec p {
+    text-align: center;
+    color:black;
+    font-size: 2rem;
+}
+
+
+header {
+    text-align: center;
+}
+#container {
+
+    width: 65%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1%;
+}
+.gallery {
+    float: left;
+    width: 200px;
+    padding: 20px;
+    margin: 20px;
+    hover {
+            cursor: pointer;
+            border-radius: 25px;
+            
+    }
+    img{
+        width: 150px;
+            height: 150px;
+    }
+    description {
+            padding: $size;
+            text-align: center;
+        }
+    
+}
+
+a:visited {
+    color: seagreen;
+}
+a:hover {
+    color: red;
+}
+
+.tableClass{
+text-align: center;
+margin-left: 10%;
+margin-top: 5%;
+}
+
+
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    /* border-bottom: 1px solid #ddd; */
+    text-align: center;
+    border: 1px solid $color-main;
+ 
+  }
+
+  tr:hover {background-color: $color-main;}
+
+  th {
+    background-color: #e69808;
+    color: rgb(14, 12, 12);
+  }
+
+  table {
+    width: 50%;
+  }
+
+  #CoffeeMenu{
+    
+        font-family: Arial, Helvetica, sans-serif;
+        border-collapse: collapse;
+        width: 75%;
+        color: black;
+      
+  }
+
+  #sec{
+      margin: 20px;
+  }
+
+  h1{
+      text-align: center;
+      margin: 50px;
+      color: blanchedalmond;
+  }
+
+  footer{
+
+    background-color: rgb(26, 24, 17);
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    text-align: center;
+    left: 0;
+  }
+
