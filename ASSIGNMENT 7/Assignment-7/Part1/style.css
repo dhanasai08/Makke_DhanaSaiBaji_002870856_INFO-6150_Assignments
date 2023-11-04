@@ -1,0 +1,117 @@
+html {
+    background-image: linear-gradient(45deg, #ea0b0b 0%, #e6e2e8 100%);
+    text-align: center;
+    
+}
+
+#container {
+    padding-top: 100px;
+    padding-left: 20px;
+    width: 700px;
+    height: 100vh;
+    margin: auto;
+    overflow-y: hidden;
+}
+
+h1{
+    padding-bottom: 30px;
+}
+
+.formlabel{
+    padding-right: 20px;
+}
+
+.formgroup{
+    text-align: center;
+    padding-top: 30px;
+}
+
+.btn2{
+    color: black;
+    border-radius: 5px;
+    background-color: transparent;
+    width: 300px;
+    height: 50px;
+}
+
+#btn2{
+    padding-top: 40px;
+}
+
+.entertext{
+    background-color: transparent;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-color: black;
+}
+
+input:focus{
+    outline: none;
+    background-color: none;
+    
+}
+
+#email:focus{
+    outline: none;
+    background-color: none;
+}
+
+input::placeholder{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn2{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .btn2:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 50;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .btn2:hover {
+    padding-right: 25px;
+  }
+  
+  .btn2:hover:after {
+    opacity: 1;
+    right: 0;
+  }
+
+.error {
+    color: rgb(165, 48, 48);
+    font-size: 12px;
+    position: relative;
+    top: -10px;
+    left: 40px;
+}
+
+#successMessage {
+    color: green;
+    font-size: 15px;
+    display: none;
+    position: relative;
+    top: -20px;
+    left: 40px;
+}
+
+#errorMessage {
+    color: rgb(165, 48, 48);
+    font-size: 15px;
+    display: none;
+    position: relative;
+    top: -20px;
+    left: 40px;
+}
+
+
+
+

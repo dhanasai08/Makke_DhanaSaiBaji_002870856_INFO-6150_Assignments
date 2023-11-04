@@ -1,0 +1,46 @@
+body {
+    height: 1000px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-color: rgb(76, 142, 104);
+    
+}
+
+.heading {
+    padding: 50px 520px;
+    letter-spacing: 10px;
+    color: black;
+}
+
+.heading label{
+    font-size: 40px;
+    padding-right: 40px;
+}
+
+.timeBar {
+    padding: 30px 500px;
+   
+}
+
+td, th {
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 40px;
+  }
+
+.buttons {
+    padding: 10px 490px;
+    display: block;
+    width: 100%;
+}
+
+.btn {
+    width: 100px;
+    height: 30px;
+    background-color: black;
+    color: rgb(215, 139, 26);
+    border-radius: 5px;
+
+}
+
