@@ -1,0 +1,295 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #85c1e9, #8e44ad);
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+body {
+    background-image: url('background.webp');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* This will make the background image fixed when you scroll */
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* When button is enabled */
+button.custom-button:not(:disabled) {
+    background-color: #007bff; /* Bootstrap primary color */
+    color: white;
+}
+
+/* When button is disabled */
+button.custom-button:disabled {
+    background-color: #cccccc;  /* Gray color */
+    color: #666666;  /* Darker gray for the text */
+}
+
+.navbar {
+    margin-bottom: 50px;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    border-radius: 8px; /* Rounded edges for aesthetic */
+}
+
+.navbar-brand {
+    font-weight: 600; /* Making the brand name bold */
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.navbar-brand:hover {
+    color: #007BFF;
+}
+
+.navbar .d-flex .btn {
+    padding: 8px 20px;
+    border: 2px solid transparent;
+    transition: background-color 0.3s ease, border-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar .d-flex .btn:hover {
+    background-color: #007BFF;
+    border-color: #007BFF;
+    transform: scale(1.05);
+    color: white;
+}
+
+.navbar .d-flex .btn:active {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    transform: scale(1);
+}
+
+/* Button CSS */
+.custom-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.custom-button.login {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: white;
+}
+
+.custom-button.login:hover {
+    background: linear-gradient(90deg, #0056b3, #003a88);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.custom-button.signup {
+    color: #003a88;
+    border: 2px solid #003a88;
+    background: transparent;
+}
+
+.custom-button.signup:hover {
+    color: white;
+    background: #003a88;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Center the social icons vertically */
+
+.social-icon {
+    vertical-align: middle;
+    margin-bottom: 12px; /* Adjust this value to move the icons upward */
+}
+
+
+
+/* Custom button styles for Home, Subscription, and about Us buttons */
+
+/* about Us button styling */
+.custom-button.about ,
+.custom-button.home,
+.custom-button.subscription{
+    background: linear-gradient(90deg, #b1b1b1, #504f4f); /* White gradient background */
+    color: #000000; /* Black text color */
+    transition: transform 0.2s, box-shadow 0.2s, color 0.2s; /
+}
+
+/* Change color on hover */
+.custom-button.about:hover,
+.custom-button.home:hover ,
+.custom-button.subscription:hover  {
+    background: linear-gradient(90deg, #0056b3, #003a88);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Remove box-shadow on active state */
+.custom-button.home:active,
+.custom-button.subscription:active,
+.custom-button.about:active {
+    transform: translateY(1px);
+    box-shadow: none;
+}
+
+.card {
+    border: none;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    border-radius: 5px;
+}
+
+.social-btns {
+    display: flex;
+    justify-content: center;
+}
+
+.social-btns .btn {
+    margin: 5px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    line-height: 50px; /* vertically center the icon */
+    text-align: center;
+    transition: 0.3s all;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.social-btns .btn img {
+    max-width: 24px;
+    max-height: 24px;
+    vertical-align: middle;
+}
+
+.social-btns .btn-primary {
+    background: linear-gradient(45deg, #4568dc, #b06ab3);
+    border: none;
+}
+
+.social-btns .btn-info {
+    background: linear-gradient(45deg, #56ab2f, #a8e063);
+    border: none;
+}
+
+.social-btns .btn-danger {
+    background: linear-gradient(45deg, #d53369, #daae51);
+    border: none;
+}
+
+.social-btns .btn:hover {
+    transform: scale(1.08);
+    box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.2);
+}
+
+.button-container {
+    display: flex;
+    gap: 20px;
+    flex-direction: column; /* New: Arrange the buttons vertically */
+}
+
+/* Common button styling */
+.custom-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    font-weight: bold;
+    transition: transform 0.2s, box-shadow 0.2s;
+    display: inline-block;
+}
+
+/* Login button styling */
+.custom-button.login {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: white;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.custom-button.login:hover {
+    background: linear-gradient(90deg, #0056b3, #003a88);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Signup button styling */
+.custom-button.signup {
+    color: #003a88;
+    border: 2px solid #003a88;
+    background: transparent;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.custom-button.signup:hover {
+    color: white;
+    background: #003a88;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Common hover and active states */
+.custom-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+}
+
+.custom-button:active {
+    transform: translateY(1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Create Account button styling */
+.btn-primary.btn-block {
+    background: linear-gradient(90deg, #007bff, #0056b3);
+    color: white;
+    border: none;
+    font-weight: bold;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.btn-primary.btn-block:hover {
+    background: linear-gradient(90deg, #0056b3, #003a88);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Back to Login button styling */
+.btn-secondary.btn-block {
+    color: #003a88;
+    border: 2px solid #003a88;
+    font-weight: bold;
+    background: transparent;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s;
+}
+
+.btn-secondary.btn-block:hover {
+    color: white;
+    background: #003a88;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}

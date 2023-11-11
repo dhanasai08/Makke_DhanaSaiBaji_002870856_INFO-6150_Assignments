@@ -1,0 +1,62 @@
+Welcome to "Fitness Plus"
+
+Elevate your well-being with "Fitness Plus" - your comprehensive guide to achieving holistic fitness. We believe in more than just physical strength; we embrace a complete approach to health, encompassing both body and mind. Dive into our diverse sections, each meticulously designed to empower you on your fitness journey. Discover an array of workouts tailored to different preferences and skill levels, ensuring there's something for everyone. "Fitness Plus" is your one-stop destination for not just fitness, but a transformative experience that encompasses every facet of your well-being. Embrace the 'plus' in fitness - because you deserve more. Welcome to a healthier, stronger, and happier you.
+
+The created webpage consists of three main pages, The login page is a crucial entry point for users into the "Fitness +" platform. Its purpose is to facilitate user authentication and account creation. The page is designed with a clean and intuitive layout, ensuring users can effortlessly access their accounts or register for new ones. By logging into it, the page will direct into main page which displays the different fitness activities.
+
+The project relies on Bootstrap CSS and JavaScript files. These files are linked in the HTML file to ensure proper styling and functionality. The bootstrap components used in the webpage are,
+
+Navbar
+The Navbar serves as the site's navigation bar. It prominently displays the "Fitness +" logo, which serves as a visual identifier for the platform. The responsive toggle button is a crucial element for mobile devices, allowing users to expand or collapse the navigation menu as needed. On the right side, there are three navigation links: "Home," "Subscription," and "Contact Us," offering easy access to essential sections of the platform.
+
+Alert
+The Alert component provides dynamic feedback to users. In this case, it displays a success message upon successful login. The alert-success class gives it a green color to indicate a positive outcome. Initially, the alert is hidden, and it is shown dynamically when needed, providing a user-friendly notification.
+
+Container: It is the outermost element that contains all other elements on the page. It helps to manage the layout and responsiveness of the content. In this project, it holds the entire page content.
+
+Row: Inside the container, rows are used to create horizontal groups of columns. They ensure proper alignment and spacing of content. For example, the login form and signup card are placed in separate rows.
+
+Column: Columns are used to divide the page horizontally. They help organize content within a row. In this project, a column is used to house the login form.
+
+Cards
+Bootstrap Cards are used to group related information together. Each card in this project represents a distinct section: the login form and the signup card.
+
+Card Header: It contains a title or header for the card. In this case, it displays "Login" or "Sign up to Fitness Plus."
+
+Card Body: This is the main content area of the card. It contains the form elements (e.g., email, password) for the login and signup processes.
+
+Card Footer: The footer section of the card. In this project, it hosts the social buttons (Facebook, Twitter, Google) for easy access to the platform's social media profiles.
+
+Form Group
+Form groups combine a label and an input element, providing a structured way to gather user input. In the login form, form groups are used for the email and password fields. Labels (<label>) help provide context and guidance for users, while the input elements (<input>) allow users to enter their information.
+
+Buttons
+Buttons in Bootstrap allow for user interaction. In this project, several buttons are employed:
+
+Login Button: This button is initially disabled (disabled attribute) and only becomes active when valid inputs are provided. It triggers the login action.
+
+Signup Button: This button, located below the login button, allows users to switch to the signup card for account creation.
+
+Navigation Buttons: The navigation bar features three buttons: "Home," "Subscription," and "Contact Us." They serve as links to different sections of the platform.
+
+Modal
+The Modal component provides a pop-up dialog for displaying additional information. In this project, it is used to present the "Terms of Service." When activated, it displays a dialog box with the relevant content, allowing users to review and accept the terms before proceeding.
+
+Social Buttons
+These are customized buttons styled using Bootstrap classes, providing links to the platform's social media profiles (Facebook, Twitter, Google). Users can click on these buttons to access the platform's social presence.
+
+Team members:
+Girija Shankar Tumma
+Email: tumma.g@northeastern.edu
+
+Vaishnavi Chundru
+Email: chundru.va@northeastern.edu
+
+Manoj Sai Pendem
+Email: pendem.m@northeastern.edu
+
+Dhana Sai Baji Makke
+Email: makke.d@northeastern.edu
+
+Raghu Vamsi Krishna Tirumalasetty
+Email: tirumalasetty.ra@northeastern.edu
